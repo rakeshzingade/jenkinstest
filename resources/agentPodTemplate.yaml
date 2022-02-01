@@ -6,10 +6,6 @@ metadata:
     app: jenkins
     component: agent
 spec:
-  securityContext:
-    runAsUser: 1000
-    runAsGroup: 1000
-    fsGroup: 1000
   containers:
   - name: terragrunt-azure
     image: devopsinfra/docker-terragrunt:azure-tf-1.1.4-tg-0.35.20
