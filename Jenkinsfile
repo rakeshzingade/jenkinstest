@@ -4,13 +4,9 @@
 
 pipeline {
 
-  libraries {
-    lib('github.com/rakeshzingade/jenkinstest@main')
-  }
   agent {
     kubernetes {
-      defaultContainer 'terragrunt-azure'
-      yaml libraryResource('resources/agentPodTemplate.yaml')
+      yamlFile 'resources/agentPodTemplate.yaml'
     }
   }
   stages {
