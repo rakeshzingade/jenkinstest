@@ -7,7 +7,7 @@ pipeline {
   agent {
     kubernetes {
       defaultContainer 'terragrunt-azure'
-      yaml libraryResource('agentPodTemplate.yaml')
+      yaml libraryResource('resources/agentPodTemplate.yaml')
     }
   }
   stages {
