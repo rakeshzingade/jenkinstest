@@ -14,7 +14,7 @@ pipeline {
       steps {
         sh '''
            echo "testing the base pod for required softwares"
-           terragrun --version
+           terragrunt --version
            terraform --version
            az version
         '''
