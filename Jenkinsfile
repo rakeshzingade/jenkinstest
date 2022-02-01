@@ -12,7 +12,12 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        sh 'testing the pod with k8s'
+        sh '''
+           echo "testing the base pod for required softwares"
+           terragrun --version
+           terraform --version
+           az version
+        '''
       }
     }
   }
