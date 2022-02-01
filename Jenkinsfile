@@ -5,6 +5,9 @@
 pipeline {
 
   agent {
+    libraries {
+      lib('github.com/rakeshzingade/jenkinstest@master')
+    }
     kubernetes {
       defaultContainer 'terragrunt-azure'
       yaml libraryResource('resources/agentPodTemplate.yaml')
