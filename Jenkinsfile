@@ -5,7 +5,7 @@
 pipeline {
 
   libraries {
-    lib('github.com/rakeshzingade/jenkinstest@master')
+    lib('github.com/rakeshzingade/jenkinstest@main')
   }
   agent {
     kubernetes {
