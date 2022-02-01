@@ -6,6 +6,7 @@ pipeline {
 
   agent {
     kubernetes {
+      defaultContainer 'terragrunt-azure'
       yamlFile 'resources/agentPodTemplate.yaml'
     }
   }
@@ -14,7 +15,6 @@ pipeline {
       steps {
         sh '''
            echo "testing the base pod for required softwares"
-           sleep 600
            terragrunt --version
            terraform --version
            az version
