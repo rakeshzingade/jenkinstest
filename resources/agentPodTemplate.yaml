@@ -14,9 +14,9 @@ spec:
     args:
     - 99d
   nodeSelector:
-    nodepool: workers
+    nodepool: worker
   tolerations:
-  - key: nodepool
+  - key: jenkins
     operator: Equal
-    value: workers
+    value: worker
     effect: NoSchedule
