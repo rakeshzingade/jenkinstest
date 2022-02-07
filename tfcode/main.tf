@@ -13,13 +13,6 @@ provider "azurerm" {
     features {}
 }
 
-provider "azuread" {
-    client_id       =   var.client_id
-    client_secret   =   var.client_secret
-    tenant_id       =   var.tenant_id
-    alias           =   "ad"
-}
-
 resource "azurerm_resource_group" "icm_rg" {
   name     = var.rgname
   location = var.location
