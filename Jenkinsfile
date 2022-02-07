@@ -38,6 +38,7 @@ pipeline {
             sh '''
               echo "Initialising terragrunt"
               cd tfcode
+              az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET -t $ARM_TENANT_ID
               terragrunt init -backend-config="access_key=$ARM_ACCESS_KEY"
               cd -
             '''  
