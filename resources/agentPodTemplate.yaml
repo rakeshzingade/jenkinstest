@@ -14,7 +14,7 @@ spec:
     args:
     - 99d
   nodeSelector:
-    nodepool: worker
+    jenkins: worker
   tolerations:
   - key: jenkins
     operator: Equal
