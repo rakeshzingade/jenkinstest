@@ -62,7 +62,7 @@ pipeline {
             sh '''
               echo "Apply terragrunt"
               cd tfcode
-              terragrunt apply -auto-approve \
+              terragrunt apply -auto-approve --terragrunt-no-auto-init \
                     -var "client_id=$ARM_CLIENT_ID" \
                     -var "client_secret=$ARM_CLIENT_SECRET" \
                     -var "subscription_id=$ARM_SUBSCRIPTION_ID" \
