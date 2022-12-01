@@ -1,3 +1,11 @@
+on:
+  workflow_dispatch:
+    inputs:
+      ReleaseLabelVersion:
+        type: string
+        description: The Label version of the POD
+        default: '8.1.0.0'
+        required: true
 jobs:
   build:
     name: Post welcome comment
