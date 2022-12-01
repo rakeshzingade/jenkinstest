@@ -1,0 +1,7 @@
+jobs:
+  build:
+    name: Post welcome comment
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "welcome to the repository!"
+        shell: bash
