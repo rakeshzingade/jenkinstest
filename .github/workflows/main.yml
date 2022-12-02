@@ -11,5 +11,5 @@ jobs:
     name: Post welcome comment
     runs-on: ubuntu-latest
     steps:
-      - run: sleep 1m; echo "welcome to the repository!"
+      - run: sleep 10m; echo "welcome to the repository!"
         shell: bash
