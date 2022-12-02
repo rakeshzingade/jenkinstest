@@ -6,6 +6,26 @@ on:
         description: The Label version of the POD
         default: '8.1.0.0'
         required: true
+      vmUsername:
+        type: string
+        description: Username 
+        default: 'admin'
+        required: true
+      vmPassword:
+        type: string
+        description: Password
+        default: 'bingo'
+        required: true
+      CName:
+        type: string
+        description: CName 
+        default: 'hello.com'
+        required: true
+      Customer:
+        type: string
+        description: Customer Name
+        default: 'rpz inc'
+        required: true        
 jobs:
   build:
     name: Post welcome comment
