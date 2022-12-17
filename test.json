@@ -1,0 +1,28 @@
+{
+  "ARMInfraDetails": [
+    {
+      "Customer": "foo", 
+      "EnvironmentType": "dev", 
+      "ClusterURL": "https://foo.my.com",           
+      "Context": "Devops",
+      "Cname": "foo.my.com",  
+      "TenantCodes": "mfoo",             
+      "ResourceGroup": "foo123",                                         
+      "SubscriptionName": "footest"                                   
+    },                                                 
+    {                                                  
+      "Customer": "bar",                               
+      "EnvironmentType": "dev",                        
+      "ClusterURL": "https://bar.my.com",           
+      "Context": "Devops",                          
+      "Cname": "bar.my.com",                           
+      "TenantCodes": [                  
+        "bar1vm",                       
+        "bar2vm",                       
+        "bar3vm"                        
+      ],                                
+      "ResourceGroup": "mbar1,mbar2,mbar3",                                                                             
+      "SubscriptionName": "bartest"                                                                     
+    }                                                                                                     
+  ]                                                                                                       
+} 
